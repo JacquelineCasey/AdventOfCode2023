@@ -83,22 +83,24 @@ func main() {
 /* Go First Impressions: 
  * 
  * Kinda annoying, to be honest. Spent too much time fiddling with the package
- * stuff, and now I have these extra layers of nesting to contend with, and so on.
+ * stuff and langauge server stuff, and now I have these extra layers of directory 
+ * nesting to contend with, and so on.
  *
- * I was able to figure out a simple generic really quickly, so thats nice. We'll
+ * I was able to figure out a simple generic really quickly, so that's nice. We'll
  * see to what extent I will use generics in this project.
  *
  * Split did not behave in the expected way, I thought it would automatically remove
  * the last newline. To be honest, the way go does it makes sense, I just had to be
  * ready to add a Trim.
  *
- * I don't like how all of the string methods are in strings instead of being actual
- * methods on string types. I also got thrown off by the fact that go uses runes instead
+ * I don't like how all of the string methods are in `strings`` instead of being actual
+ * methods on string objects. I also got thrown off by the fact that go uses runes instead
  * of ascii characters, even though they did seem to coincide at the end of the day.
  * Actually I think this idea is admirable, it just slowed me down today.
  *
  * Every range for loop being an enumerate is certainly a choice, though its possible
- * Zig does that too? Hard to say.
+ * Zig does that too? I don't remember. That being said, I know Go will do a similar
+ * thing for key value pairs in maps, and that sort of thing always makes me happy.
  *
  * I was upset to learn that you couldn't overslice like in Python (and Rust?), 
  * you have to use min(...) to make sure you don't go out of bounds.
@@ -108,14 +110,14 @@ func main() {
  * to think such efforts are a waste of time.
  *
  * The string() and int() half method half type things remind me of Python. For sure
- * pythons influence is strongly felt here. 
+ * python's influence is strongly felt here. 
  *
  * Finally I'll note that I kinda wrote crappy code here with the 9 seperate checks,
  * but it was what I could get done fastest. Probably a map or a list is the nicer
  * approach, but I would need to learn them really quickly. I imagine I will want
  * to learn them soon. 
  *
- * Slices, other than the index thing, are nice, and slicing slices and comparing
+ * Slices, other than the index thing, are nice, and slicing strings and comparing
  * to strings worked seamlessly. I know in one of {Rust, Zig} I tried to do it and
  * it worked seamedly, so I am glad it is fine here. And C++ forces you to do substr
  * calls I imagine.
