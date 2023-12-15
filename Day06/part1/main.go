@@ -40,8 +40,6 @@ func main() {
 		} 
 	}
 
-	fmt.Println(times, distances)
-
 	product := 1
 
 	for i, time := range times {

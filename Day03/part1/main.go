@@ -83,7 +83,6 @@ func main() {
 	sum := 0
 	for _, span := range numbers {
 		if span_touches_symbol(span, symbols) {
-			fmt.Println(span.num)
 			sum += span.num
 		}
 	}
